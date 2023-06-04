@@ -1,0 +1,14 @@
+<nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" [routerLink]="['/']">
+      <strong class="ml-4 is-size-2">Github Repo Searcher</strong> </a>
+  </div>
+  <div id="navbarItems" class="navbar-menu is-active">
+    <ng-content select=".navbar-start">
+    </ng-content>
+    <div class="navbar-end mt-4 mr-4">
+      <ab-ui-notification [notification]="(notification$ | async) ?? { class: '', message: '' }"></ab-ui-notification>
+      <a [routerLink]="['/custom-search']" class="button ">Custom Search</a>
+    </div>
+  </div>
+</nav>

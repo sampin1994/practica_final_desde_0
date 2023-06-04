@@ -1,0 +1,601 @@
+{
+  "cli": {
+    "analytics": "059c49fe-d277-48af-ba18-272ed22cbf6f"
+  },
+  "version": 1,
+  "projects": {
+    
+    "domain-home": {
+      "projectType": "library",
+      "root": "libs/domain/home",
+      "sourceRoot": "libs/domain/home/src",
+      "prefix": "ab",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/domain/home/tsconfig.lib.json",
+            "project": "libs/domain/home/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/domain/home/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/domain/home/src/**/*.ts",
+              "libs/domain/home/src/**/*.html"
+            ]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/domain/home"],
+          "options": {
+            "jestConfig": "libs/domain/home/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": ["domain", "page"]
+    },
+    "domain-not-found": {
+      "projectType": "library",
+      "root": "libs/domain/not-found",
+      "sourceRoot": "libs/domain/not-found/src",
+      "prefix": "ab",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/domain/not-found/tsconfig.lib.json",
+            "project": "libs/domain/not-found/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/domain/not-found/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/domain/not-found/src/**/*.ts",
+              "libs/domain/not-found/src/**/*.html"
+            ]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/domain/not-found"],
+          "options": {
+            "jestConfig": "libs/domain/not-found/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": ["domain", "page"]
+    },
+    "domain-resource": {
+      "projectType": "library",
+      "root": "libs/domain/resource",
+      "sourceRoot": "libs/domain/resource/src",
+      "prefix": "ab",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/domain/resource/tsconfig.lib.json",
+            "project": "libs/domain/resource/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/domain/resource/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/domain/resource/src/**/*.ts",
+              "libs/domain/resource/src/**/*.html"
+            ]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/domain/resource"],
+          "options": {
+            "jestConfig": "libs/domain/resource/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": ["domain", "page"]
+    },
+    "domain-resource-new": {
+      "projectType": "library",
+      "root": "libs/domain/resource-new",
+      "sourceRoot": "libs/domain/resource-new/src",
+      "prefix": "ab",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/domain/resource-new/tsconfig.lib.json",
+            "project": "libs/domain/resource-new/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/domain/resource-new/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/domain/resource-new/src/**/*.ts",
+              "libs/domain/resource-new/src/**/*.html"
+            ]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/domain/resource-new"],
+          "options": {
+            "jestConfig": "libs/domain/resource-new/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": ["domain", "page"]
+    },
+    "domain-search": {
+      "projectType": "library",
+      "root": "libs/domain/search",
+      "sourceRoot": "libs/domain/search/src",
+      "prefix": "ab",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/domain/search/tsconfig.lib.json",
+            "project": "libs/domain/search/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/domain/search/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/domain/search/src/**/*.ts",
+              "libs/domain/search/src/**/*.html"
+            ]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/domain/search"],
+          "options": {
+            "jestConfig": "libs/domain/search/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": ["domain", "page"]
+    },
+    "domain-search-box": {
+      "projectType": "library",
+      "root": "libs/domain/search-box",
+      "sourceRoot": "libs/domain/search-box/src",
+      "prefix": "ab",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/domain/search-box/tsconfig.lib.json",
+            "project": "libs/domain/search-box/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/domain/search-box/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/domain/search-box/src/**/*.ts",
+              "libs/domain/search-box/src/**/*.html"
+            ]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/domain/search-box"],
+          "options": {
+            "jestConfig": "libs/domain/search-box/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": ["domain", "widget"]
+    },
+    "shared-auth": {
+      "projectType": "library",
+      "root": "libs/shared/auth",
+      "sourceRoot": "libs/shared/auth/src",
+      "prefix": "ab",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/shared/auth/tsconfig.lib.json",
+            "project": "libs/shared/auth/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/shared/auth/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/auth/src/**/*.ts",
+              "libs/shared/auth/src/**/*.html"
+            ]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/auth"],
+          "options": {
+            "jestConfig": "libs/shared/auth/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": ["shared", "page"]
+    },
+    "shared-data": {
+      "projectType": "library",
+      "root": "libs/shared/data",
+      "sourceRoot": "libs/shared/data/src",
+      "prefix": "ab",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/shared/data/tsconfig.lib.json",
+            "project": "libs/shared/data/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/shared/data/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/data/src/**/*.ts",
+              "libs/shared/data/src/**/*.html"
+            ]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/data"],
+          "options": {
+            "jestConfig": "libs/shared/data/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": ["shared", "core"]
+    },
+    "shared-form": {
+      "projectType": "library",
+      "root": "libs/shared/form",
+      "sourceRoot": "libs/shared/form/src",
+      "prefix": "ab-form",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/shared/form/tsconfig.lib.json",
+            "project": "libs/shared/form/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/shared/form/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/form/src/**/*.ts",
+              "libs/shared/form/src/**/*.html"
+            ]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/form"],
+          "options": {
+            "jestConfig": "libs/shared/form/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": ["shared", "ui"]
+    },
+    "shared-global": {
+      "projectType": "library",
+      "root": "libs/shared/global",
+      "sourceRoot": "libs/shared/global/src",
+      "prefix": "ab",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/shared/global/tsconfig.lib.json",
+            "project": "libs/shared/global/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/shared/global/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/global/src/**/*.ts",
+              "libs/shared/global/src/**/*.html"
+            ]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/global"],
+          "options": {
+            "jestConfig": "libs/shared/global/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": ["shared", "core"]
+    },
+    "shared-layout": {
+      "projectType": "library",
+      "root": "libs/shared/layout",
+      "sourceRoot": "libs/shared/layout/src",
+      "prefix": "ab",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/shared/layout/tsconfig.lib.json",
+            "project": "libs/shared/layout/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/shared/layout/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/layout/src/**/*.ts",
+              "libs/shared/layout/src/**/*.html"
+            ]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/layout"],
+          "options": {
+            "jestConfig": "libs/shared/layout/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": ["shared", "ui"]
+    },
+    "shared-ui": {
+      "projectType": "library",
+      "root": "libs/shared/ui",
+      "sourceRoot": "libs/shared/ui/src",
+      "prefix": "ab-ui",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/shared/ui/tsconfig.lib.json",
+            "project": "libs/shared/ui/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/shared/ui/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/ui/src/**/*.ts",
+              "libs/shared/ui/src/**/*.html"
+            ]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/ui"],
+          "options": {
+            "jestConfig": "libs/shared/ui/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": ["shared", "ui"]
+    },
+    "www": {
+      "projectType": "application",
+      "root": "apps/www",
+      "sourceRoot": "apps/www/src",
+      "prefix": "ab",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/www",
+            "index": "apps/www/src/index.html",
+            "main": "apps/www/src/main.ts",
+            "polyfills": "apps/www/src/polyfills.ts",
+            "tsConfig": "apps/www/tsconfig.app.json",
+            "assets": ["apps/www/src/favicon.ico", "apps/www/src/assets"],
+            "styles": [
+              "apps/www/src/styles.css",
+              "node_modules/bulma/css/bulma.css"
+            ],
+            "scripts": [],
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/www/src/environments/environment.ts",
+                  "with": "apps/www/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "www:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "www:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "www:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/www/src/**/*.ts",
+              "apps/www/src/**/*.html"
+            ]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/www"],
+          "options": {
+            "jestConfig": "apps/www/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "www-e2e": {
+      "root": "apps/www-e2e",
+      "sourceRoot": "apps/www-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/www-e2e/cypress.json",
+            "tsConfig": "apps/www-e2e/tsconfig.e2e.json",
+            "devServerTarget": "www:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "www:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/www-e2e/**/*.{js,ts}"]
+          },
+          "outputs": ["{options.outputFile}"]
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["www"]
+    }
+  }
+}

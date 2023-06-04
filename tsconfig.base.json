@@ -1,0 +1,33 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ab/auth": ["libs/shared/auth/src/index.ts"],
+      "@ab/data": ["libs/shared/data/src/index.ts"],
+      "@ab/form": ["libs/shared/form/src/index.ts"],
+      "@ab/global": ["libs/shared/global/src/index.ts"],
+      "@ab/home": ["libs/domain/home/src/index.ts"],
+      "@ab/layout": ["libs/shared/layout/src/index.ts"],
+      "@ab/not-found": ["libs/domain/not-found/src/index.ts"],
+      "@ab/resource": ["libs/domain/resource/src/index.ts"],
+      "@ab/custom-search": ["libs/domain/custom-search/src/index.ts"],
+      "@ab/search": ["libs/domain/search/src/index.ts"],
+      "@ab/search-box": ["libs/domain/search-box/src/index.ts"],
+      "@ab/ui": ["libs/shared/ui/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

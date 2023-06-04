@@ -1,0 +1,54 @@
+<form
+  [formGroup]="form"
+  (submit)="onSubmit()"
+  class="box mt-4 mb-4"
+  autocomplete="off"
+>
+  <fieldset class="mb-4">
+
+    <ab-form-control
+      [form]="form"
+      formControlName="name"
+      type="text"
+      label="Find text"
+      placeholder="Input text"
+    >
+    </ab-form-control>
+
+    <ab-form-control
+      [form]="form"
+      formControlName="language"
+      type="text"
+      label="Programming language"
+      placeholder="Input language"
+    >
+    </ab-form-control>
+    <ab-course-form
+
+    ></ab-course-form>
+    <ab-form-control
+      [form]="form"
+      formControlName="nResults"
+      type="number"
+      label="Maximum number of results"
+      placeholder="Max number of results"
+    >
+    </ab-form-control>
+    <ab-form-control
+      [form]="form"
+      formControlName="confirmResults"
+      type="number"
+      label="Confirm Maximum number of results"
+      placeholder="Confirm Max number of results"
+    >
+    </ab-form-control>
+    
+
+  </fieldset>
+  <input
+    type="submit"
+    value="Search"
+    [disabled]="form.invalid"
+    class="button is-link mt-4"
+  />
+</form>

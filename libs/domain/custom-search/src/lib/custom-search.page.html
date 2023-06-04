@@ -1,0 +1,7 @@
+<section>
+    <ab-ui-header [header]="header"></ab-ui-header>
+    <ab-custom-search (send)="onSend($event)">
+    </ab-custom-search>
+    <ab-ui-resource-list *ngIf="resources$ | async as resources" [resources]="resources">
+    </ab-ui-resource-list>
+</section>

@@ -1,0 +1,32 @@
+<div class="card mb-4">
+    <div class="card-content">
+      <div class="media">
+        <div class="media-left">
+          <figure class="image is-60x60">
+            <img *ngIf="card.img" [src]="card.img" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="media-content">
+          <p>
+            <a *ngIf="card.href" [href]="card.href" abUiTrack="card.href" class="title is-1">{{ card.title }}</a>
+          </p>
+           
+          <div class="bottom">
+            <p>
+                <a *ngIf="card.owner" [href]="card.owner_url" abUiTrack="card.href" class="subtitle is-3">Developed by {{card.owner}}</a>
+            </p>
+          </div>
+        </div>
+        <div class="media-content">
+            <div *ngIf="!!card.description; else noDescription" class="content">
+              {{ card.description | truncate:200}}
+            </div>
+        </div>
+      </div>
+    </div>
+    <a [href]="card.href">Click to navigate to repository site {{card.owner}}</a>
+</div>
+<ng-template #noDescription>
+    <ng-content select=".content">
+    </ng-content>
+</ng-template>
